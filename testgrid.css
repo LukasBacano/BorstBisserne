@@ -1,0 +1,47 @@
+
+
+.testgridmobil{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    margin: 1% auto;
+    grid-template-columns: repeat(1fr 1fr 1fr 1fr);
+    grid-template-areas: 
+    "logo . . ."
+    ". . . ."
+    "billede billede billede billede"
+    ". video video ."
+    ;
+}
+
+
+
+
+b1{
+    grid-area: logo;
+    height: 20px;
+    text-align: center;
+    padding: 5%;
+    
+}
+
+b2{
+    grid-area: billede;
+    height: 100px;
+    padding: 5%;
+    text-align: center
+}
+
+b3{
+    grid-area: video;
+    padding: 5%;
+    text-align: center
+}
+
+
+@media screen and(min-width 1200px) {
+    body{
+        font-size: 20px;
+    }
+    
+}
